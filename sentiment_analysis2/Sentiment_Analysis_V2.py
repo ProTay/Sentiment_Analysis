@@ -14,7 +14,7 @@ from langdetect.lang_detect_exception import LangDetectException
 word_dict = {'manipulate': -1, 'manipulative': -1, 'jamescharlesiscancelled': -1, 'jamescharlesisoverparty': -1,
              'pedophile': -1, 'pedo': -1, 'cancel': -1, 'cancelled': -1, 'cancel culture': 0.4, 'teamtati': -1,
              'teamjames': 1,
-             'teamjamescharles': 1, 'liar': -1, 'goat' : 1, 'Goat': 1}
+             'teamjamescharles': 1, 'liar': -1, 'goat' : 1, 'Goat': 1} # ----- Added 'goat' and 'Goat' to the list -----
 
 # twitter data cleaner
 
@@ -23,7 +23,9 @@ sid = SentimentIntensityAnalyzer()
 sid.lexicon.update(word_dict)
 nltk.download('words')
 words = set(nltk.corpus.words.words())
-folder_path = 'C:/Users/itztt/Downloads/AI-Content'
+folder_path = 'C:/Users/itztt/Downloads/AI-Content' # ----- Added 'C:/Users/itztt/Downloads/AI-Content' as the folder_path -----
+
+
 
 # Loop over the folder
 for filename in os.listdir(folder_path):
