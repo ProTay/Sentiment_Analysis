@@ -1,3 +1,6 @@
+#SMAL 2024
+#Written by Ahmad Y.
+#Code for running sentiment analysis
 import nltk
 import pandas as pd
 import re
